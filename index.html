@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
 
 <head>
   <meta charset="utf-8">
@@ -13,6 +14,68 @@
       margin-left:auto;
       margin-right:auto;
     }
+
+    .neonPink{
+      color: #fff;
+      text-shadow:
+        /* white glow  */
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        /* pink glow */
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+    }
+
+        .neonBlue{
+      color: #fff;
+      text-shadow:
+        /* white glow  */
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        /* blue glow */
+        0 0 42px #006eff,
+        0 0 82px #006eff,
+        0 0 92px #006eff,
+        0 0 102px #006eff,
+        0 0 151px #006eff;
+    }
+
+    .borderPink{
+      border: 0.2rem solid #fff;
+      border-radius: 2rem;
+      padding: 0.4em;
+      box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #bc13fe,
+                  0 0 0.8rem #bc13fe,
+                  0 0 2.8rem #bc13fe,
+                  inset 0 0 1.3rem #bc13fe;
+    }
+
+    .borderBlue{
+      border: 0.2rem solid #fff;
+      border-radius: 2rem;
+      padding: 0.4em;
+      box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #006eff,
+                  0 0 0.8rem #006eff,
+                  0 0 2.8rem #006eff,
+                  inset 0 0 1.3rem #006eff;
+    }
+
+
+    h1{
+    font-size:78px;
+    font-family: "Vibur", sans-serif;
+    }
+
+
   </style>
 </head>
 
@@ -58,8 +121,8 @@
         <img src="static/images/FatPetes.JPG" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-white lh-1 mb-3">Jenner Coker</h1>
-        <p class="lead text-white">Jenner is an up and coming comic who has roots in Texas. Since moving to Virginia, he can be seen throughout the DMV area. With his self-depreciating humor and witty wordplay, Jenner can get an audience laughing. When not on the mic Jenner works as an Engineer and enjoys recreational sports as a washed college athlete.</p>
+        <h1 class="neonBlue">Jenner Coker</h1>
+        <p class="lead text-white">Jenner is an up and coming comic who has roots in Texas. Since moving to Virginia, he can be seen throughout the DMV area. With his self-depreciating humor and witty wordplay, Jenner can get an audience laughing. When not on the mic Jenner works as an engineer and enjoys recreational sports as a washed college athlete.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         </div>
       </div>
@@ -68,46 +131,58 @@
 
   <div class="container">
     <!-- Appearances Section -->
-    <div style="" class=" pb-3 row border border-danger-subtle rounded">
-      <!-- This row shows other Appearances -->
-    <h1 class="text-white pt-3 pb-2 ps-3">
-      Appears On
-    </h1>
-      <div class="col-4">
-          <div class="card bg-black border border-info" style="">
-            <h5 class="pt-2 ps-2 card-title text-white">L&C Podcast Episode 83</h5>
-            <iframe width="355" height="200" class="center" src="https://www.youtube.com/embed/LC0OUpP5Tx8?si=efIlU7YKRw13lzoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text text-white">Jenner's first appearance on the L&C podcast. This podcast is ran by fellow comics Chris Balmer and Lorenzo Taylor.</p>
-              <a href="https://www.youtube.com/watch?v=LC0OUpP5Tx8" class="btn btn-outline-info">Watch Video</a>
-            </div>
-          </div>
-      </div>
+    <h6 class="borderPink">
+      <div style="" class=" pb-3 row">
+        <!-- This row shows other Appearances -->
+        <h1 class="neonPink">
+          Appears On
+        </h1>
 
-      <div class="col-4">
-        <div class="card bg-black border border-info" style="">
-            <h5 class="pt-2 ps-2 card-title text-white">L&C Podcast 100th Episode</h5>
-            <iframe width="355" height="200" class="center" src="https://www.youtube.com/embed/pE5-tNkbsk0?si=OoT0zlXRBBIfxRI2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text text-white">Jenner joins the pod with several other comics to celebrate L&C's 100th episode, on it's 3rd birthday.</p>
-              <br>
-              <a href="https://www.youtube.com/watch?v=pE5-tNkbsk0&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5000%2F&source_ve_path=Mjg2NjY" class="btn btn-outline-info">Watch Video</a>
-            </div>
+        <div class="col-4">
+          <h6 class="borderBlue">
+            <div class="card bg-black rounded-" style="">
+                <h5 class="pt-2 ps-2 card-title text-white">L&C Podcast Episode 83</h5>
+                <iframe width="355" height="200" class="center" src="https://www.youtube.com/embed/LC0OUpP5Tx8?si=efIlU7YKRw13lzoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text text-white">Jenner's first appearance on the L&C podcast. This podcast is ran by fellow comics Chris Balmer and Lorenzo Taylor.</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=LC0OUpP5Tx8" class="btn btn-outline-info">Watch Video</a>
+                </div>
+              </div>
+          </h6>
         </div>
-      </div>
 
-      <div class="col-4">
-        <div class="pt-2 ps-2 card bg-black border border-info" style="">
-            <h5 class="card-title text-white">Card title</h5>
-            <iframe width="355" height="200" class="center" src="https://www.youtube.com/embed/LC0OUpP5Tx8?si=efIlU7YKRw13lzoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <br>
-              <a href="#" class="btn btn-outline-info">Go somewhere</a>
+        <div class="col-4">
+          <h6 class="borderBlue">
+            <div class="card bg-black" style="">
+                <h5 class="pt-2 ps-2 card-title text-white">L&C Podcast 100th Episode</h5>
+                <iframe width="355" height="200" class="center" src="https://www.youtube.com/embed/pE5-tNkbsk0?si=OoT0zlXRBBIfxRI2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text text-white">Jenner joins the pod with several other comics to celebrate L&C's 100th episode, on it's 3rd birthday.</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=pE5-tNkbsk0&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5000%2F&source_ve_path=Mjg2NjY" class="btn btn-outline-info">Watch Video</a>
+                </div>
             </div>
+          </h6>
         </div>
+
+        <div class="col-4">
+          <h6 class="borderBlue">
+            <div class="pt-2 ps-2 card bg-black" style="">
+                <h5 class="card-title text-white">Card title</h5>
+                <iframe width="355" height="200" class="center" src="https://www.youtube.com/embed/LC0OUpP5Tx8?si=efIlU7YKRw13lzoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <br>
+                  <br>
+                  <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                </div>
+            </div>
+          </h6>
+        </div>
+
       </div>
-    </div>
+    </h6>
   </div>
 
 
